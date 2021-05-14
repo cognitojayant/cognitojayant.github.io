@@ -264,11 +264,11 @@
 </li>
 <li>
 <p>This process of giving access to memory to a program or application is by and large called memory allocation. On top of hardware layers such as RAM or a hard drive is the operating system (OS) layer which consists of  One of the fundamental layers over the equipment (like RAM or a hard drive) is the working framework (OS) consists of a <em>Kernel</em> which is  the operating  system code that is responsible for interaction of hardware and software components. A <em>kernel</em> is first program that loads at startup after bootloader and having a reserved memory separated from programs and applications.  It carries out (or denies) requests to read and write from memory.</p>
-<p><img src="kernel-hardware-interaction.png" alt="kernel-hardware-interaction.png"></p>
+<p><img src="/posts/memory-management-in-python/kernel-hardware-interaction.png" alt="kernel-hardware-interaction.png"></p>
 </li>
 <li>
 <p>Memory management for your Python code is handled by the Python application or process. Above the OS, there are applications, one of which is the default Python implementation.</p>
-<p><img src="python-vmm.png" alt="python-vmm.png"></p>
+<p><img src="/posts/memory-management-in-python/python-vmm.png" alt="python-vmm.png"></p>
 </li>
 <li>
 <p>How it is implemented in Python?</p>
@@ -363,7 +363,7 @@
 </code></pre></td></tr></table>
 </div>
 </div><p>Can be visualised as</p>
-<p><img src="stack-heap-memory-example.png" alt="stack-heap-memory-example.png"></p>
+<p><img src="/posts/memory-management-in-python/stack-heap-memory-example.png" alt="stack-heap-memory-example.png"></p>
 </li>
 </ul>
 </li>
@@ -382,14 +382,14 @@
 <ul>
 <li>
 <p>Arenas are the largest chunks of memory and are aligned on a page boundary in memory. A page boundary is the edge of a fixed-length contiguous chunk of memory that the OS uses. Python assumes the system’s page size is 256 kilobytes.</p>
-<p><img src="arena-CPython.png" alt="arena-CPython.png"></p>
+<p><img src="/posts/memory-management-in-python/arena-CPython.png" alt="arena-CPython.png"></p>
 </li>
 <li>
 <p>Arenas contain pools. Those pools can be used, full, or empty. Arenas themselves don’t have as explicit states as pools do though.</p>
 </li>
 <li>
 <p>Arenas are instead organized into a doubly linked list called usable_arenas. The list is sorted by the number of free pools available. The fewer free pools, the closer the arena is to the front of the list.</p>
-<p><img src="usable-arena.png" alt="usable-arena.png"></p>
+<p><img src="/posts/memory-management-in-python/usable-arena.png" alt="usable-arena.png"></p>
 </li>
 <li>
 <p>Arenas are the only things that can truly be freed. So, it stands to reason that those arenas that are closer to being empty should be allowed to become empty.That way, that chunk of memory can be truly freed, reducing the overall memory footprint of your Python program.</p>
@@ -406,7 +406,7 @@
 </li>
 <li>
 <p>Pools themselves must be in one of 3 states: used, full, or empty. A used pool has available blocks for data to be stored. A full pool’s blocks are all allocated and contain data. An empty pool has no data stored and can be assigned any size class for blocks when needed.</p>
-<p><img src="pools-in-CPython.png" alt="pools-in-CPython.png"></p>
+<p><img src="/posts/memory-management-in-python/pools-in-CPython.png" alt="pools-in-CPython.png"></p>
 </li>
 <li>
 <p>A freepools list keeps track of all the pools in the empty state. But when do empty pools get used?</p>
@@ -429,7 +429,7 @@
 </li>
 <li>
 <p>Pool can have blocks in 3 states. These states can be defined as follows:</p>
-<p><img src="pools-in-CPython.png" alt="pools-in-CPython.png"></p>
+<p><img src="/posts/memory-management-in-python/pools-in-CPython.png" alt="pools-in-CPython.png"></p>
 <ul>
 <li>
 <p>Free</p>
@@ -439,7 +439,7 @@
 </li>
 <li>
 <p>The freeblock pointer points to a singly linked list of free blocks of memory. In other words, a list of available places to put data. If more than the available free blocks are needed, the allocator will get some untouched blocks in the pool.</p>
-<p><img src="blocks-in-CPython.png" alt="blocks-in-CPython.png"></p>
+<p><img src="/posts/memory-management-in-python/blocks-in-CPython.png" alt="blocks-in-CPython.png"></p>
 </li>
 </ul>
 </li>
