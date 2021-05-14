@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>My Cognitive Cogitations</title>
+    <link>https://cognitojayant.github.io/</link>
+    <description>Recent content on My Cognitive Cogitations</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>cognitojayant@gmail.com (Jayant Jha)</managingEditor>
+    <webMaster>cognitojayant@gmail.com (Jayant Jha)</webMaster>
+    <lastBuildDate>Thu, 13 May 2021 02:21:10 +0530</lastBuildDate>
+    
+	<atom:link href="https://cognitojayant.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Memory Management in Python</title>
+      <link>https://cognitojayant.github.io/posts/memory-management-in-python/</link>
+      <pubDate>Thu, 13 May 2021 02:21:10 +0530</pubDate>
+      <author>cognitojayant@gmail.com (Jayant Jha)</author>
+      <guid>https://cognitojayant.github.io/posts/memory-management-in-python/</guid>
+      <description>What is Memory Management?   Memory management is a procedure by which applications or program to read and write some data from memory. A memory manager determines where to put an application’s data. Since there’s only finite chunk of memory available to us.
+  This process of giving access to memory to a program or application is by and large called memory allocation. On top of hardware layers such as RAM or a hard drive is the operating system (OS) layer which consists of One of the fundamental layers over the equipment (like RAM or a hard drive) is the working framework (OS) consists of a Kernel which is the operating system code that is responsible for interaction of hardware and software components.</description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>https://cognitojayant.github.io/about/</link>
+      <pubDate>Wed, 12 May 2021 00:38:49 +0530</pubDate>
+      <author>cognitojayant@gmail.com (Jayant Jha)</author>
+      <guid>https://cognitojayant.github.io/about/</guid>
+      <description>Summary  &amp;ldquo;It is not knowledge, but the act of learning, not possession but the act of getting there, which grants the greatest enjoyment&amp;rdquo; ~ Carl Friedrich Gauss
+ Hey, my name is Jayant Jha currently working as Machine Learning Scientist at a StartUp EZLab based out of Gurugram, Haryana, India. Given my effort and inquisitiveness to learn and understand, i gets awed by the nature that how little i know.</description>
+    </item>
+    
+  </channel>
+</rss>
