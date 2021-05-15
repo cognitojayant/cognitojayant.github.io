@@ -8,8 +8,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
   <title>Memory Management in Python - My Cognitive Cogitations</title>
-  <meta name="description" content="What is Memory Management?   Memory management is a procedure by which applications or program to read and write some data from memory. A memory manager determines where to put an application’s data. Since there’s only finite chunk of memory available to us.
-  This process of giving access to memory to a program or application is by and large called memory allocation. On top of hardware layers such as RAM or a hard drive is the operating system (OS) layer which consists of One of the fundamental layers over the equipment (like RAM or a hard drive) is the working framework (OS) consists of a Kernel which is the operating system code that is responsible for interaction of hardware and software components.">
+  <meta name="description" content="What is Memory Management? Memory management is a procedure by which applications or program to read and write some data from memory. A memory manager determines where to put an application’s data. Since there’s only finite chunk of memory available to us.
+This process of giving access to memory to a program or application is by and large called memory allocation. On top of hardware layers such as RAM or a hard drive is the operating system (OS) layer which consists of One of the fundamental layers over the equipment (like RAM or a hard drive) is the working framework (OS) consists of a Kernel which is the operating system code that is responsible for interaction of hardware and software components.">
   <meta name="author" content="Jayant Jha"/><script type="application/ld+json">
 {
     "@context": "http://schema.org",
@@ -58,9 +58,9 @@
     "name" : "Jayant Jha"
   },
   "headline": "Memory Management in Python",
-  "description" : "What is Memory Management?   Memory management is a procedure by which applications or program to read and write some data from memory. A memory manager determines where to put an application’s data. Since there’s only finite chunk of memory available to us.\n  This process of giving access to memory to a program or application is by and large called memory allocation. On top of hardware layers such as RAM or a hard drive is the operating system (OS) layer which consists of One of the fundamental layers over the equipment (like RAM or a hard drive) is the working framework (OS) consists of a Kernel which is the operating system code that is responsible for interaction of hardware and software components.",
+  "description" : "What is Memory Management? Memory management is a procedure by which applications or program to read and write some data from memory. A memory manager determines where to put an application’s data. Since there’s only finite chunk of memory available to us.\nThis process of giving access to memory to a program or application is by and large called memory allocation. On top of hardware layers such as RAM or a hard drive is the operating system (OS) layer which consists of One of the fundamental layers over the equipment (like RAM or a hard drive) is the working framework (OS) consists of a Kernel which is the operating system code that is responsible for interaction of hardware and software components.",
   "inLanguage" : "en",
-  "wordCount":  1585 ,
+  "wordCount":  1579 ,
   "datePublished" : "2021-05-13T02:21:10",
   "dateModified" : "2021-05-13T02:21:10",
   "image" : "https:\/\/cognitojayant.github.io\/img\/avatar-2.jpg",
@@ -80,15 +80,15 @@
 </script>
 
 <meta property="og:title" content="Memory Management in Python" />
-<meta property="og:description" content="What is Memory Management?   Memory management is a procedure by which applications or program to read and write some data from memory. A memory manager determines where to put an application’s data. Since there’s only finite chunk of memory available to us.
-  This process of giving access to memory to a program or application is by and large called memory allocation. On top of hardware layers such as RAM or a hard drive is the operating system (OS) layer which consists of One of the fundamental layers over the equipment (like RAM or a hard drive) is the working framework (OS) consists of a Kernel which is the operating system code that is responsible for interaction of hardware and software components.">
+<meta property="og:description" content="What is Memory Management? Memory management is a procedure by which applications or program to read and write some data from memory. A memory manager determines where to put an application’s data. Since there’s only finite chunk of memory available to us.
+This process of giving access to memory to a program or application is by and large called memory allocation. On top of hardware layers such as RAM or a hard drive is the operating system (OS) layer which consists of One of the fundamental layers over the equipment (like RAM or a hard drive) is the working framework (OS) consists of a Kernel which is the operating system code that is responsible for interaction of hardware and software components.">
 <meta property="og:image" content="https://cognitojayant.github.io/img/avatar-2.jpg" />
 <meta property="og:url" content="https://cognitojayant.github.io/posts/memory-management-in-python/" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="My Cognitive Cogitations" />
 
   <meta name="twitter:title" content="Memory Management in Python" />
-  <meta name="twitter:description" content="What is Memory Management?   Memory management is a procedure by which applications or program to read and write some data from memory. A memory manager determines where to put an application’s data. …">
+  <meta name="twitter:description" content="What is Memory Management? Memory management is a procedure by which applications or program to read and write some data from memory. A memory manager determines where to put an application’s data. …">
   <meta name="twitter:image" content="https://cognitojayant.github.io/img/avatar-2.jpg" />
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@cognitojayant" />
@@ -256,48 +256,24 @@
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
       <article role="main" class="blog-post">
-        <ul>
-<li>What is Memory Management?
-<ul>
-<li>
+        <h2 id="what-is-memory-management">What is Memory Management?</h2>
 <p>Memory management is a procedure by which applications or program to read and write some data from memory. A memory manager determines where to put an application’s data. Since there’s  only finite chunk of memory available to us.</p>
-</li>
-<li>
 <p>This process of giving access to memory to a program or application is by and large called memory allocation. On top of hardware layers such as RAM or a hard drive is the operating system (OS) layer which consists of  One of the fundamental layers over the equipment (like RAM or a hard drive) is the working framework (OS) consists of a <em>Kernel</em> which is  the operating  system code that is responsible for interaction of hardware and software components. A <em>kernel</em> is first program that loads at startup after bootloader and having a reserved memory separated from programs and applications.  It carries out (or denies) requests to read and write from memory.</p>
 <p><img src="/posts/memory-management-in-python/kernel-hardware-interaction.png" alt="kernel-hardware-interaction.png"></p>
-</li>
-<li>
 <p>Memory management for your Python code is handled by the Python application or process. Above the OS, there are applications, one of which is the default Python implementation.</p>
 <p><img src="/posts/memory-management-in-python/python-vmm.png" alt="python-vmm.png"></p>
-</li>
-<li>
-<p>How it is implemented in Python?</p>
-<ul>
-<li>
+<h3 id="how-it-is-implemented-in-python">How it is implemented in Python?</h3>
 <p>The default Python execution, <code>CPython</code>, is actually written in the C programming language. Yet, there are executions other than <code>CPython</code>. For instance, <code>Jython</code> arranges down to Java <code>bytecode</code> to run on the Java Virtual Machine.</p>
-</li>
-<li>
 <p>Python is an interpreted programming language. Our Python code actually gets compiled down to more computer-readable instructions called as <code>bytecode</code>. Then these instructions get interpreted by a virtual machine when we run your code.</p>
-</li>
-<li>
 <p>Usually in Cpython implementation, <code>.pyc</code> file or a <code>__pycache__</code> folder will be created after compilation. <code>.pyc</code>contains all the <code>bytecode</code> which gets interpreted by the virtual machine.</p>
-</li>
-<li>
 <p>Virtual machines similar to physical computers except they are implemented in software.</p>
-</li>
-<li>
 <p><code>CPython</code> is written in C, and it interprets Python <code>bytecode</code> after compilation.</p>
-<ul>
-<li>
-<p>What does this have to do with memory management?</p>
+<h3 id="what-does-this-have-to-do-with-memory-management">What does this have to do with memory management?</h3>
 <p>Well, the memory management algorithms and structures exist in the <code>CPython</code> code, in C. To understand the memory management of Python, we have to get a basic understanding of <code>CPython</code> itself.</p>
-</li>
-<li>
-<p><code>Cpython</code></p>
-<ul>
-<li>Everything in Python is an object, even types such as <code>int</code> and <code>str.</code> Well, it’s true on an implementation level in <code>CPython</code>. There is a struct called a <code>PyObject</code>, which every other object in <code>CPython</code> uses.</li>
-<li>A struct, or structure, in C is a custom data type that groups together different data types.</li>
-<li>PyObject, the grand-daddy of all objects in Python, contains only two things:
+<h4 id="cpython"><code>Cpython</code></h4>
+<p>Everything in Python is an object, even types such as <code>int</code> and <code>str.</code> Well, it’s true on an implementation level in <code>CPython</code>. There is a struct called a <code>PyObject</code>, which every other object in <code>CPython</code> uses.</p>
+<p>A struct, or structure, in C is a custom data type that groups together different data types.
+PyObject, the grand-daddy of all objects in Python, contains only two things:</p>
 <ul>
 <li><code>ob_refcnt</code>:Reference Count
 <ul>
@@ -309,136 +285,95 @@
 <li><code>ob_type</code>: Pointer to another Type
 <ul>
 <li>Then you have a pointer to the actual object type. That object type is just another struct that describes a Python object (such as a dict or int)</li>
-<li>Each object has its own object-specific memory allocator that knows how to get the memory to store that object. Each object also has an object-specific memory deallocator that “frees” the memory once it’s no longer needed</li>
 </ul>
 </li>
 </ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>
+<p>Each object has its own object-specific memory allocator that knows how to get the memory to store that object. Each object also has an object-specific memory deallocator that “frees” the memory once it’s no longer needed</p>
 <p>Every python process needs some memory and resources. Memory management in Python involves a private heap containing all Python objects and data structures.  Management of this heap is done internally by <em>Python Memory Manager.</em> It has many software component for managing different memory management tasks such segmentation, preallocations, caching etc.</p>
-</li>
-<li>
 <p>At a very low level, a raw memory allocator always ensures that there is enough space in private heap for all python related data by interacting with memory manager. Furthermore, this memory is divided into two parts:</p>
 <ul>
-<li>Stack Memory
+<li>
+<p>Stack Memory</p>
 <ul>
 <li>Stack memory is the contiguous blocks of memory allocated in the function call stack or we can say that, It is the storage of static memory inside a particular function or method call. The size of this memory that need to be allocated is known to the compiler and whenever a function is called, its variables get memory allocated on the stack.</li>
 <li>Any local memory assignments inside function block are stored temporarily on the function call stack, it gets deleted once the function returns and call stack moves another function or task.</li>
 </ul>
 </li>
-<li>Heap Memory
+<li>
+<p>Heap Memory</p>
 <ul>
 <li>This memory is allocated during the execution of instruction written in the program in the global scope. This heap memory has nothing to do with heap data structure. Since heap memory is just a pile of memory available to programmer to allocate and de-allocate.</li>
 <li>Management of this private heap is done by interpreter, user have no control over it.</li>
 </ul>
-</li>
-</ul>
 <p>The methods/method calls and the references are stored in stack memory and all the values objects are stored in a private heap.  Example of this process</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
-</span><span class="lnt">7
-</span><span class="lnt">8
-</span><span class="lnt">9
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def</span> <span class="nf">func1</span><span class="p">(</span><span class="n">num</span><span class="p">:</span> <span class="nb">int</span><span class="p">):</span>
-                <span class="k">return</span> <span class="n">num</span> <span class="o">=</span> <span class="n">func2</span><span class="p">(</span><span class="n">num</span><span class="p">)</span>
-<span class="k">def</span> <span class="nf">func2</span><span class="p">(</span><span class="n">num</span><span class="p">:</span> <span class="nb">int</span><span class="p">):</span>
-                <span class="k">return</span> <span class="n">num</span> <span class="o">*</span> <span class="mi">2</span>
+<pre><code>      ```python
+      def func1(num: int):
+                      return num = func2(num)
+      def func2(num: int):
+                      return num * 2
 
-<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&#34;__main__&#34;</span><span class="p">:</span>
-                <span class="n">val</span> <span class="o">=</span> <span class="mi">7</span>
-                <span class="n">result</span> <span class="o">=</span> <span class="n">func1</span><span class="p">(</span><span class="n">someNum</span><span class="p">)</span>
-              
-</code></pre></td></tr></table>
-</div>
-</div><p>Can be visualised as</p>
-<p><img src="/posts/memory-management-in-python/stack-heap-memory-example.png" alt="stack-heap-memory-example.png"></p>
+      if __name__ == &quot;__main__&quot;:
+                      val = 7
+                      result = func1(someNum)
+        	
+      ```
+
+      Can be visualised as  
+
+      ![stack-heap-memory-example.png](/posts/memory-management-in-python/stack-heap-memory-example.png)
+</code></pre>
 </li>
 </ul>
-</li>
-<li>
-<p>Allocation and Deallocation in <code>Cpython</code></p>
+<h2 id="allocation-and-deallocation-in-cpython">Allocation and Deallocation in <code>Cpython</code></h2>
+<p>Memory is a shared resource between applications and processes on the computer, and bad things can happen very easily if two different processes try to write to the same location simultaneously.</p>
+<p>When two threads try to modify the same resource or memory at the  exactly same time, things can get messy very easily which results in such a mess where neither of the thread gets what they wanted to be.</p>
+<p>Here comes to rescue, GIL which is solution to dealing with shared resources. Python&rsquo;s GIL achieves this by locking the interpreter, implying that it&rsquo;s impractical for another thread to step on the current one. When <code>CPython</code> handles memory, it utilizes the GIL to guarantee that it does so safely.</p>
+<h2 id="cpythons-memory-allocation-strategy"><code>CPython’s</code> memory allocation strategy</h2>
 <ul>
-<li>Memory is a shared resource between applications and processes on the computer, and bad things can happen very easily if two different processes try to write to the same location simultaneously.</li>
-<li>When two threads try to modify the same resource or memory at the  exactly same time, things can get messy very easily which results in such a mess where neither of the thread gets what they wanted to be.</li>
-<li>Here comes to rescue, GIL which is solution to dealing with shared resources. Python&rsquo;s GIL achieves this by locking the interpreter, implying that it&rsquo;s impractical for another thread to step on the current one. When <code>CPython</code> handles memory, it utilizes the GIL to guarantee that it does so safely.</li>
+<li>
+<p>Arenas</p>
+<ul>
+<li>Arenas are the largest chunks of memory and are aligned on a page boundary in memory. A page boundary is the edge of a fixed-length contiguous chunk of memory that the OS uses. Python assumes the system’s page size is 256 kilobytes.</li>
 </ul>
-</li>
-<li>
-<p><code>CPython’s</code> memory allocation strategy</p>
-<ul>
-<li>Arenas
-<ul>
-<li>
-<p>Arenas are the largest chunks of memory and are aligned on a page boundary in memory. A page boundary is the edge of a fixed-length contiguous chunk of memory that the OS uses. Python assumes the system’s page size is 256 kilobytes.</p>
 <p><img src="/posts/memory-management-in-python/arena-CPython.png" alt="arena-CPython.png"></p>
-</li>
-<li>
-<p>Arenas contain pools. Those pools can be used, full, or empty. Arenas themselves don’t have as explicit states as pools do though.</p>
-</li>
-<li>
-<p>Arenas are instead organized into a doubly linked list called usable_arenas. The list is sorted by the number of free pools available. The fewer free pools, the closer the arena is to the front of the list.</p>
+<ul>
+<li>Arenas contain pools. Those pools can be used, full, or empty. Arenas themselves don’t have as explicit states as pools do though.</li>
+<li>Arenas are instead organized into a doubly linked list called usable_arenas. The list is sorted by the number of free pools available. The fewer free pools, the closer the arena is to the front of the list.</li>
+</ul>
 <p><img src="/posts/memory-management-in-python/usable-arena.png" alt="usable-arena.png"></p>
-</li>
-<li>
-<p>Arenas are the only things that can truly be freed. So, it stands to reason that those arenas that are closer to being empty should be allowed to become empty.That way, that chunk of memory can be truly freed, reducing the overall memory footprint of your Python program.</p>
-</li>
+<ul>
+<li>Arenas are the only things that can truly be freed. So, it stands to reason that those arenas that are closer to being empty should be allowed to become empty.That way, that chunk of memory can be truly freed, reducing the overall memory footprint of your Python program.</li>
 </ul>
 </li>
-<li>pools
+<li>
+<p>pools</p>
 <ul>
-<li>
-<p>Pools are composed of blocks from a single size class. Each pool maintains a double-linked list to other pools of the same size class. In that way, the algorithm can easily find available space for a given block size, even across different pools.</p>
-</li>
-<li>
-<p>Within the arenas are pools, which are one virtual memory page (4 kilobytes).</p>
-</li>
-<li>
-<p>Pools themselves must be in one of 3 states: used, full, or empty. A used pool has available blocks for data to be stored. A full pool’s blocks are all allocated and contain data. An empty pool has no data stored and can be assigned any size class for blocks when needed.</p>
+<li>Pools are composed of blocks from a single size class. Each pool maintains a double-linked list to other pools of the same size class. In that way, the algorithm can easily find available space for a given block size, even across different pools.</li>
+<li>Within the arenas are pools, which are one virtual memory page (4 kilobytes).</li>
+<li>Pools themselves must be in one of 3 states: used, full, or empty. A used pool has available blocks for data to be stored. A full pool’s blocks are all allocated and contain data. An empty pool has no data stored and can be assigned any size class for blocks when needed.</li>
+</ul>
 <p><img src="/posts/memory-management-in-python/pools-in-CPython.png" alt="pools-in-CPython.png"></p>
-</li>
-<li>
-<p>A freepools list keeps track of all the pools in the empty state. But when do empty pools get used?</p>
-</li>
-<li>
-<p>A usedpools list tracks all the pools that have some space available for data for each size class. When a given block size is requested, the algorithm checks this usedpools list for the list of pools for that block size. Assume your code needs an 8-byte chunk of memory. If there are no pools in usedpools of the 8-byte size class, a fresh empty pool is initialized to store 8-byte blocks. This new pool then gets added to the usedpools list so it can be used for future requests.</p>
-</li>
-<li>
-<p>Say a full pool frees some of its blocks because the memory is no longer needed. That pool would get added back to the usedpools list for its size class</p>
-</li>
+<ul>
+<li>A freepools list keeps track of all the pools in the empty state. But when do empty pools get used?</li>
+<li>A usedpools list tracks all the pools that have some space available for data for each size class. When a given block size is requested, the algorithm checks this usedpools list for the list of pools for that block size. Assume your code needs an 8-byte chunk of memory. If there are no pools in usedpools of the 8-byte size class, a fresh empty pool is initialized to store 8-byte blocks. This new pool then gets added to the usedpools list so it can be used for future requests.</li>
+<li>Say a full pool frees some of its blocks because the memory is no longer needed. That pool would get added back to the usedpools list for its size class</li>
 </ul>
 </li>
-<li>Blocks
+<li>
+<p>Blocks</p>
 <ul>
-<li>
-<p>These pools are fragmented into smaller blocks of memory.</p>
-</li>
-<li>
-<p>All the blocks in a given pool are of the same “size class.” A size class defines a specific block size, given some amount of requested data.</p>
-</li>
-<li>
-<p>Pool can have blocks in 3 states. These states can be defined as follows:</p>
+<li>These pools are fragmented into smaller blocks of memory.</li>
+<li>All the blocks in a given pool are of the same “size class.” A size class defines a specific block size, given some amount of requested data.</li>
+<li>Pool can have blocks in 3 states. These states can be defined as follows:</li>
+</ul>
 <p><img src="/posts/memory-management-in-python/pools-in-CPython.png" alt="pools-in-CPython.png"></p>
 <ul>
 <li>
 <p>Free</p>
 <ul>
-<li>
-<p>A portion of memory that was allocated but later made “free” by CPython and that no longer contains relevant data.</p>
-</li>
-<li>
-<p>The freeblock pointer points to a singly linked list of free blocks of memory. In other words, a list of available places to put data. If more than the available free blocks are needed, the allocator will get some untouched blocks in the pool.</p>
+<li>A portion of memory that was allocated but later made “free” by CPython and that no longer contains relevant data.</li>
+<li>The freeblock pointer points to a singly linked list of free blocks of memory. In other words, a list of available places to put data. If more than the available free blocks are needed, the allocator will get some untouched blocks in the pool.</li>
+</ul>
 <p><img src="/posts/memory-management-in-python/blocks-in-CPython.png" alt="blocks-in-CPython.png"></p>
 </li>
 </ul>
@@ -454,14 +389,6 @@
 <ul>
 <li>A portion of memory that actually contains relevant data.</li>
 <li>When a block is deemed “free”, that memory is not actually freed back to the operating system. The Python process keeps it allocated and will use it later for new data. Truly freeing memory returns it to the operating system to use.</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
 </ul>
 </li>
 </ul>
