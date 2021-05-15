@@ -60,7 +60,7 @@ This process of giving access to memory to a program or application is by and la
   "headline": "Memory Management in Python",
   "description" : "What is Memory Management? Memory management is a procedure by which applications or program to read and write some data from memory. A memory manager determines where to put an application’s data. Since there’s only finite chunk of memory available to us.\nThis process of giving access to memory to a program or application is by and large called memory allocation. On top of hardware layers such as RAM or a hard drive is the operating system (OS) layer which consists of One of the fundamental layers over the equipment (like RAM or a hard drive) is the working framework (OS) consists of a Kernel which is the operating system code that is responsible for interaction of hardware and software components.",
   "inLanguage" : "en",
-  "wordCount":  1579 ,
+  "wordCount":  1580 ,
   "datePublished" : "2021-05-13T02:21:10",
   "dateModified" : "2021-05-13T02:21:10",
   "image" : "https:\/\/cognitojayant.github.io\/img\/avatar-2.jpg",
@@ -376,19 +376,17 @@ PyObject, the grand-daddy of all objects in Python, contains only two things:</p
 </ul>
 <p><img src="/posts/memory-management-in-python/blocks-in-CPython.png" alt="blocks-in-CPython.png"></p>
 </li>
-</ul>
-</li>
 <li>
-<p>Untouched</p>
-<ul>
-<li>A portion of memory that has not been allocated.</li>
-</ul>
+<p>Untouched
+- A portion of memory that has not been allocated.</p>
 </li>
 <li>
 <p>Allocated</p>
 <ul>
 <li>A portion of memory that actually contains relevant data.</li>
 <li>When a block is deemed “free”, that memory is not actually freed back to the operating system. The Python process keeps it allocated and will use it later for new data. Truly freeing memory returns it to the operating system to use.</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
