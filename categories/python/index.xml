@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>cognitojayant@gmail.com (Jayant Jha)</managingEditor>
     <webMaster>cognitojayant@gmail.com (Jayant Jha)</webMaster>
-    <lastBuildDate>Thu, 13 May 2021 02:21:10 +0530</lastBuildDate>
+    <lastBuildDate>Thu, 13 May 2021 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://cognitojayant.github.io/categories/python/index.xml" rel="self" type="application/rss+xml" />
     
@@ -15,7 +15,7 @@
     <item>
       <title>Memory Management in Python</title>
       <link>https://cognitojayant.github.io/posts/memory-management-in-python/</link>
-      <pubDate>Thu, 13 May 2021 02:21:10 +0530</pubDate>
+      <pubDate>Thu, 13 May 2021 00:00:00 +0000</pubDate>
       <author>cognitojayant@gmail.com (Jayant Jha)</author>
       <guid>https://cognitojayant.github.io/posts/memory-management-in-python/</guid>
       <description>What is Memory Management? Memory management is a procedure by which applications or program to read and write some data from memory. A memory manager determines where to put an application’s data. Since there’s only a finite chunk of memory available to us.

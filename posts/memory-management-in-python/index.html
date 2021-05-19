@@ -60,9 +60,9 @@ This process of giving access to memory to a program or application is by and la
   "headline": "Memory Management in Python",
   "description" : "What is Memory Management? Memory management is a procedure by which applications or program to read and write some data from memory. A memory manager determines where to put an application’s data. Since there’s only a finite chunk of memory available to us.\nThis process of giving access to memory to a program or application is by and large called memory allocation. On top of hardware layers such as RAM or a hard drive is the operating system (OS) layer which consists of a Kernel which is the operating system code that is responsible for interaction of hardware and software components.",
   "inLanguage" : "en",
-  "wordCount":  1560 ,
-  "datePublished" : "2021-05-13T02:21:10",
-  "dateModified" : "2021-05-13T02:21:10",
+  "wordCount":  1567 ,
+  "datePublished" : "2021-05-13T00:00:00",
+  "dateModified" : "2021-05-13T00:00:00",
   "image" : "https:\/\/cognitojayant.github.io\/img\/avatar-2.jpg",
   "keywords" : [ "Python" ],
   "mainEntityOfPage" : "https:\/\/cognitojayant.github.io\/posts\/memory-management-in-python\/",
@@ -306,19 +306,31 @@ PyObject, the grand-daddy of all objects in Python, contains only two things:</p
 <li>Management of this private heap is done by interpreter, user have no control over it.</li>
 </ul>
 <p>The methods/method calls and the references are stored in stack memory and all the values objects are stored in a private heap.  Example of this process</p>
-<pre><code>      ```python
-      def func1(num: int):
-                      return num = func2(num)
-      def func2(num: int):
-                      return num * 2
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python">        <span class="k">def</span> <span class="nf">func1</span><span class="p">(</span><span class="n">num</span><span class="p">:</span> <span class="nb">int</span><span class="p">):</span>
+                        <span class="k">return</span> <span class="n">num</span> <span class="o">=</span> <span class="n">func2</span><span class="p">(</span><span class="n">num</span><span class="p">)</span>
+        <span class="k">def</span> <span class="nf">func2</span><span class="p">(</span><span class="n">num</span><span class="p">:</span> <span class="nb">int</span><span class="p">):</span>
+                        <span class="k">return</span> <span class="n">num</span> <span class="o">*</span> <span class="mi">2</span>
 
-      if __name__ == &quot;__main__&quot;:
-                      val = 7
-                      result = func1(someNum)
-        	
-      ```
-</code></pre>
-<p>Can be visualised as</p>
+        <span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&#34;__main__&#34;</span><span class="p">:</span>
+                        <span class="n">val</span> <span class="o">=</span> <span class="mi">7</span>
+                        <span class="n">result</span> <span class="o">=</span> <span class="n">func1</span><span class="p">(</span><span class="n">someNum</span><span class="p">)</span>
+              
+</code></pre></td></tr></table>
+</div>
+</div><p>Can be visualised as</p>
 <p><img src="/posts/memory-management-in-python/stack-heap-memory-example.png" alt="stack-heap-memory-example.png"></p>
 </li>
 </ul>

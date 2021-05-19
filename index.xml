@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>cognitojayant@gmail.com (Jayant Jha)</managingEditor>
     <webMaster>cognitojayant@gmail.com (Jayant Jha)</webMaster>
-    <lastBuildDate>Thu, 13 May 2021 02:21:10 +0530</lastBuildDate>
+    <lastBuildDate>Thu, 13 May 2021 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://cognitojayant.github.io/index.xml" rel="self" type="application/rss+xml" />
     
@@ -15,7 +15,7 @@
     <item>
       <title>Memory Management in Python</title>
       <link>https://cognitojayant.github.io/posts/memory-management-in-python/</link>
-      <pubDate>Thu, 13 May 2021 02:21:10 +0530</pubDate>
+      <pubDate>Thu, 13 May 2021 00:00:00 +0000</pubDate>
       <author>cognitojayant@gmail.com (Jayant Jha)</author>
       <guid>https://cognitojayant.github.io/posts/memory-management-in-python/</guid>
       <description>What is Memory Management? Memory management is a procedure by which applications or program to read and write some data from memory. A memory manager determines where to put an application’s data. Since there’s only a finite chunk of memory available to us.
@@ -29,7 +29,7 @@ This process of giving access to memory to a program or application is by and la
       <author>cognitojayant@gmail.com (Jayant Jha)</author>
       <guid>https://cognitojayant.github.io/about/</guid>
       <description>Summary  &amp;ldquo;It is not knowledge, but the act of learning, not possession but the act of getting there, which grants the greatest enjoyment&amp;rdquo; ~ Carl Friedrich Gauss
- Hey, my name is Jayant Jha currently working as Machine Learning Scientist at a StartUp EZLab based out of Gurugram, Haryana, India. Given my effort and inquisitiveness to learn and understand, i gets awed by the nature that how little i know.</description>
+ Hey, my name is Jayant Jha currently working as Machine Learning Scientist at a organization EZLab based out of Gurugram, Haryana, India. Given my effort and inquisitiveness to learn and understand, i gets awed by the nature that how little i know.</description>
     </item>
     
   </channel>
