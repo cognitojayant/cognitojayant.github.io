@@ -19,7 +19,7 @@
       <author>cognitojayant@gmail.com (Jayant Jha)</author>
       <guid>https://cognitojayant.github.io/posts/memory-management-in-python/</guid>
       <description>What is Memory Management? Memory management is a procedure by which applications or program to read and write some data from memory. A memory manager determines where to put an application’s data. Since there’s only a finite chunk of memory available to us.
-This process of giving access to memory to a program or application is by and large called memory allocation. On top of hardware layers such as RAM or a hard drive is the operating system (OS) layer which consists of consists of a Kernel which is the operating system code that is responsible for interaction of hardware and software components.</description>
+This process of giving access to memory to a program or application is by and large called memory allocation. On top of hardware layers such as RAM or a hard drive is the operating system (OS) layer which consists of a Kernel which is the operating system code that is responsible for interaction of hardware and software components.</description>
     </item>
     
   </channel>
