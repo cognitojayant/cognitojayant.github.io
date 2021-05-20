@@ -8,8 +8,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
   <title>Memory Management in Python - My Cognitive Cogitations</title>
-  <meta name="description" content="What is Memory Management? Memory management is a procedure by which applications or program to read and write some data from memory. A memory manager determines where to put an application’s data. Since there’s only a finite chunk of memory available to us.
-This process of giving access to memory to a program or application is by and large called memory allocation. On top of hardware layers such as RAM or a hard drive is the operating system (OS) layer which consists of a Kernel which is the operating system code that is responsible for interaction of hardware and software components.">
+  <meta name="description" content="What is Memory Management? Memory management is a procedure by which applications or program to read and write some data from memory. A memory manager determines where to put application’s data. Since there’s only a finite chunk of memory available to us.
+This process of giving access to memory to a program or application is by in large called memory allocation. On top of hardware layers such as RAM or a hard drive is their an operating system (OS) layer which consists of a Kernel which can be considered as the operating system code that is responsible for interaction of hardware and software components.">
   <meta name="author" content="Jayant Jha"/><script type="application/ld+json">
 {
     "@context": "http://schema.org",
@@ -58,9 +58,9 @@ This process of giving access to memory to a program or application is by and la
     "name" : "Jayant Jha"
   },
   "headline": "Memory Management in Python",
-  "description" : "What is Memory Management? Memory management is a procedure by which applications or program to read and write some data from memory. A memory manager determines where to put an application’s data. Since there’s only a finite chunk of memory available to us.\nThis process of giving access to memory to a program or application is by and large called memory allocation. On top of hardware layers such as RAM or a hard drive is the operating system (OS) layer which consists of a Kernel which is the operating system code that is responsible for interaction of hardware and software components.",
+  "description" : "What is Memory Management? Memory management is a procedure by which applications or program to read and write some data from memory. A memory manager determines where to put application’s data. Since there’s only a finite chunk of memory available to us.\nThis process of giving access to memory to a program or application is by in large called memory allocation. On top of hardware layers such as RAM or a hard drive is their an operating system (OS) layer which consists of a Kernel which can be considered as the operating system code that is responsible for interaction of hardware and software components.",
   "inLanguage" : "en",
-  "wordCount":  1567 ,
+  "wordCount":  1585 ,
   "datePublished" : "2021-05-13T00:00:00",
   "dateModified" : "2021-05-13T00:00:00",
   "image" : "https:\/\/cognitojayant.github.io\/img\/avatar-2.jpg",
@@ -80,15 +80,15 @@ This process of giving access to memory to a program or application is by and la
 </script>
 
 <meta property="og:title" content="Memory Management in Python" />
-<meta property="og:description" content="What is Memory Management? Memory management is a procedure by which applications or program to read and write some data from memory. A memory manager determines where to put an application’s data. Since there’s only a finite chunk of memory available to us.
-This process of giving access to memory to a program or application is by and large called memory allocation. On top of hardware layers such as RAM or a hard drive is the operating system (OS) layer which consists of a Kernel which is the operating system code that is responsible for interaction of hardware and software components.">
+<meta property="og:description" content="What is Memory Management? Memory management is a procedure by which applications or program to read and write some data from memory. A memory manager determines where to put application’s data. Since there’s only a finite chunk of memory available to us.
+This process of giving access to memory to a program or application is by in large called memory allocation. On top of hardware layers such as RAM or a hard drive is their an operating system (OS) layer which consists of a Kernel which can be considered as the operating system code that is responsible for interaction of hardware and software components.">
 <meta property="og:image" content="https://cognitojayant.github.io/img/avatar-2.jpg" />
 <meta property="og:url" content="https://cognitojayant.github.io/posts/memory-management-in-python/" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="My Cognitive Cogitations" />
 
   <meta name="twitter:title" content="Memory Management in Python" />
-  <meta name="twitter:description" content="What is Memory Management? Memory management is a procedure by which applications or program to read and write some data from memory. A memory manager determines where to put an application’s data. …">
+  <meta name="twitter:description" content="What is Memory Management? Memory management is a procedure by which applications or program to read and write some data from memory. A memory manager determines where to put application’s data. Since …">
   <meta name="twitter:image" content="https://cognitojayant.github.io/img/avatar-2.jpg" />
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@cognitojayant" />
@@ -257,29 +257,29 @@ This process of giving access to memory to a program or application is by and la
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
       <article role="main" class="blog-post">
         <h2 id="what-is-memory-management">What is Memory Management?</h2>
-<p>Memory management is a procedure by which applications or program to read and write some data from memory. A memory manager determines where to put an application’s data. Since there’s  only a finite chunk of memory available to us.</p>
-<p>This process of giving access to memory to a program or application is by and large called memory allocation. On top of hardware layers such as RAM or a hard drive is the operating system (OS) layer which consists of a <em>Kernel</em> which is  the operating  system code that is responsible for interaction of hardware and software components. A <em>kernel</em> is first program that loads at startup after bootloader and having a reserved memory separated from programs and applications.  It carries out (or denies) requests to read and write from memory.</p>
+<p>Memory management is a procedure by which applications or program to read and write some data from memory. A memory manager determines where to put application’s data. Since there’s  only a finite chunk of memory available to us.</p>
+<p>This process of giving access to memory to a program or application is by in large called memory allocation. On top of hardware layers such as RAM or a hard drive is their an operating system (OS) layer which consists of a <em>Kernel</em> which can be considered as the operating  system code that is responsible for interaction of hardware and software components. A <em>kernel</em> is the first program that loads at startup after bootloader and having a seperate reserved memory space from programs and applications.  It carries out (or denies) requests to read and write from memory.</p>
 <p><img src="/posts/memory-management-in-python/kernel-hardware-interaction.png" alt="kernel-hardware-interaction.png"></p>
-<p>Memory management for your Python code is handled by the Python application or process. Above the OS, there are applications, one of which is the Python application or processes.</p>
+<p>Memory management for your Python code is handled by the Python application or process. Above the OS layer, there are applications and processes at application layer, one of which is the Python application or processes.</p>
 <p><img src="/posts/memory-management-in-python/python-vmm.png" alt="python-vmm.png"></p>
 <h3 id="how-it-is-implemented-in-python">How it is implemented in Python?</h3>
 <p>The default Python execution, <code>CPython</code>, is actually written in the C programming language. Yet, there are executions other than <code>CPython</code>. For instance, <code>Jython</code> arranges down to Java <code>bytecode</code> to run on the Java Virtual Machine.</p>
-<p>Python is an interpreted programming language. Our Python code actually gets compiled down to more computer-readable instructions called as <code>bytecode</code>. Then these instructions get interpreted by a virtual machine when we run your code.</p>
+<p>Python is an interpreted programming language. Our Python code actually gets compiled down to more computer-readable instructions called as <code>bytecode</code>. Then these instructions gets interpreted by a virtual machine when we run our code.</p>
 <p>Usually in Cpython implementation, <code>.pyc</code> file or a <code>__pycache__</code> folder will be created after compilation. <code>.pyc</code>contains all the <code>bytecode</code> which gets interpreted by the virtual machine.</p>
-<p>Virtual machines similar to physical computers except they are implemented in software.</p>
+<p>Virtual machines are very much similar to physical computers except they are implemented in software.</p>
 <p><code>CPython</code> is written in C, and it interprets Python <code>bytecode</code> after compilation.</p>
 <h3 id="what-does-this-have-to-do-with-memory-management">What does this have to do with memory management?</h3>
 <p>Well, the memory management algorithms and structures exist in the <code>CPython</code> code, in C. To understand the memory management of Python, we have to get a basic understanding of <code>CPython</code> itself.</p>
 <h4 id="cpython"><code>Cpython</code></h4>
 <p>Everything in Python is an object, even types such as <code>int</code> and <code>str.</code> Well, it’s true on an implementation level in <code>CPython</code>. There is a struct called a <code>PyObject</code>, which every other object in <code>CPython</code> uses.</p>
 <p>A struct, or structure, in C is a custom data type that groups together different data types.
-PyObject, the grand-daddy of all objects in Python, contains only two things:</p>
+PyObject, the archetype of all objects in Python, contains only two things:</p>
 <ul>
 <li><code>ob_refcnt</code>:Reference Count
 <ul>
 <li>Reference count is used for garbage collection</li>
-<li>Python allows you to inspect the current reference count of an object with the <code>sys</code> module. We can use <code>sys.getrefcount(numbers)</code>, but keep in mind that passing in the object to <code>getrefcount()</code> increases the reference count by 1.</li>
-<li>In any case, if the object is still required to hang around in your code, its reference count is greater than 0. Once it drops to 0, the object has a specific deallocation function that is called which “frees” the memory so that other objects can use it.</li>
+<li>Python allows you to inspect the current reference count of an object with the <code>sys</code> module. We can use <code>sys.getrefcount(numbers)</code>, but should be kept in mind that passing in the object to <code>getrefcount()</code> increases the reference count by 1.</li>
+<li>In any case, if the object is still required need to be hang around in our code, its reference count is greater than 0. Once it drops to 0, the object has a specific deallocation function that is called which “frees” the memory so that other objects can use it.</li>
 </ul>
 </li>
 <li><code>ob_type</code>: Pointer to another Type
@@ -352,7 +352,7 @@ PyObject, the grand-daddy of all objects in Python, contains only two things:</p
 </ul>
 <p><img src="/posts/memory-management-in-python/usable-arena.png" alt="usable-arena.png"></p>
 <ul>
-<li>Arenas are the only things that can truly be freed. So, it stands to reason that those arenas that are closer to being empty should be allowed to become empty.That way, that chunk of memory can be truly freed, reducing the overall memory footprint of your Python program.</li>
+<li>Arenas are the only things that can truly be freed. So, it stands to reason that those arenas that are closer to being empty should be allowed to become empty.That way, that chunk of memory can be truly freed, reducing the overall memory footprint of our Python program.</li>
 </ul>
 </li>
 <li>
@@ -365,7 +365,7 @@ PyObject, the grand-daddy of all objects in Python, contains only two things:</p
 <p><img src="/posts/memory-management-in-python/pools-in-CPython.png" alt="pools-in-CPython.png"></p>
 <ul>
 <li>A freepools list keeps track of all the pools in the empty state. But when do empty pools get used?</li>
-<li>A usedpools list tracks all the pools that have some space available for data for each size class. When a given block size is requested, the algorithm checks this usedpools list for the list of pools for that block size. Assume your code needs an 8-byte chunk of memory. If there are no pools in usedpools of the 8-byte size class, a fresh empty pool is initialized to store 8-byte blocks. This new pool then gets added to the usedpools list so it can be used for future requests.</li>
+<li>A usedpools list tracks all the pools that have some space available for data for each size class. When a given block size is requested, the algorithm checks this usedpools list for the list of pools for that block size. Assume our code needs an 8-byte chunk of memory. If there are no pools in usedpools of the 8-byte size class, a fresh empty pool is initialized to store 8-byte blocks. This new pool then gets added to the usedpools list so it can be used for future requests.</li>
 <li>Say a full pool frees some of its blocks because the memory is no longer needed. That pool would get added back to the usedpools list for its size class</li>
 </ul>
 </li>
